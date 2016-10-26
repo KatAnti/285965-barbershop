@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf_8">
-    <title>HTML Academy: Барбершоп</title>
+	<meta charset="utf_8">
+	<title>HTML Academy: Барбершоп</title>
 </head>
 <body>
-	<header>
+	<header class="main_header">
 		<div class="container">
-		    <div class="header_logo">
+			<div class="header_logo">
 				<img src="http://placehold.it/150x100" width="150" height="100" alt="Барбершоп «Бородинский»">
 			</div>
 			<nav class="main_navigation">
@@ -28,14 +28,14 @@
 						<a href="#">Контакты</a>
 					</li>
 				</ul>
-            </nav>
-		    <div class="user_block">
-                <a class="login" href="#">Вход</a>
-            </div>
+			</nav>
+			<div class="user_block">
+				<a class="login" href="#">Вход</a>
+			</div>
 		</div>
 	</header>
 	<div class="container main">
-	    <h1>Средства для ухода</h1>
+		<h1>Средства для ухода</h1>
 		<ul class="breadcrumbs">
 			<li>
 				<a href="#">Главная</a>
@@ -53,25 +53,28 @@
 					<fieldset>
 						<legend class="content_title">Производители:</legend>
 						<input type="checkbox" name="Baxter" id="baxter_of_cal" value="Baxter of California">
-						<label for="#baxter_of_cal">Baxter of California</label>
+						<label for="baxter_of_cal">Baxter of California</label>
 						<input type="checkbox" name="Natty" id="mr_natty" value="Mr Natty">
-						<label for="#mr_natty">Mr Natty</label>
+						<label for="mr_natty">Mr Natty</label>
 						<input type="checkbox" name="Suavecito" id="suavecito" value="Suavecito">
-						<label for="#suavecito">Suavecito</label>
+						<label for="suavecito">Suavecito</label>
 						<input type="checkbox" name="Malin" id="malin_goetz" value="Malin+Goetz">
-						<label for="#malin_goetz">Malin+Goetz</label>
+						<label for="malin_goetz">Malin+Goetz</label>
 						<input type="checkbox" name="Murray" id="murrays" value="Murrays">
-						<label for="#murrays">Murray's</label>
+						<label for="murrays">Murray's</label>
 						<input type="checkbox" name="American" id="american_crew" value="American Crew">
-						<label for="#american_crew">American Crew</label>
+						<label for="american_crew">American Crew</label>
 					</fieldset>
 					<fieldset class="filter_container">
 						<legend class="content_title">Группы товаров:</legend>
-						<label><input type="radio" name="accessories" value="razors">Бритвенные принадлежности</label>
-						<label><input type="radio" name="accessories" value="care">Средства для ухода</label>
-						<label><input type="radio" name="accessories" value="accessories">Аксессуары</label>
+						<input type="radio" name="accessories" id="razors" value="razors">
+						<label for="razors">Бритвенные принадлежности</label>
+						<input type="radio" name="accessories" id="care" value="care">
+						<label for="care">Средства для ухода</label>
+						<input type="radio" name="accessories" id="accessories" value="accessories">
+						<label for="accessories">Аксессуары</label>
 					</fieldset>
-					<input type="submit" name="show" value="Показать">
+					<input class="btn" type="submit" name="show" value="Показать">
 				</form>
 			</div>
 			<div class="catalog_products">
@@ -79,20 +82,20 @@
 					<div class="product_img">
 						<img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий">
 					</div>
-					<p>Набор для путешествий  «Baxter of California»</p>
+					<p>Набор для путешествий «Baxter of California»</p>
 					<div class="price_buy">
 						2900 руб.
-						<a class="buy_btn" href="/">Купить</a>
+						<a class="btn" href="/">Купить</a>
 					</div>
 				</div>
 				<div class="product_item">
 					<div class="product_img">
 						<img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий">
 					</div>
-					<p>Увлажняющий кондиционер  «Baxter of California»</p>
+					<p>Увлажняющий кондиционер «Baxter of California»</p>
 					<div class="price_buy">
 						750 руб.
-						<a class="buy_btn" href="/">Купить</a>
+						<a class="btn" href="/">Купить</a>
 					</div>
 				</div>
 				<div class="product_item">
@@ -102,17 +105,17 @@
 					<p>Гель для волос «SUAVECITO»</p>
 					<div class="price_buy">
 						290 руб.
-						<a class="buy_btn" href="/">Купить</a>
+						<a class="btn" href="/">Купить</a>
 					</div>
 				</div>
 				<div class="product_item">
 					<div class="product_img">
 						<img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий">
 					</div>
-					<p>Глина для укладки волос  «American crew»</p>
+					<p>Глина для укладки волос «American crew»</p>
 					<div class="price_buy">
 						500 руб.
-						<a class="buy_btn" href="/">Купить</a>
+						<a class="btn" href="/">Купить</a>
 					</div>
 				</div>
 				<div class="product_item">
@@ -122,7 +125,7 @@
 					<p>Гель для волос «AMERICAN CREW»</p>
 					<div class="price_buy">
 						300 руб.
-						<a class="buy_btn" href="/">Купить</a>
+						<a class="btn" href="/">Купить</a>
 					</div>
 				</div>
 				<div class="product_item">
@@ -132,7 +135,7 @@
 					<p>Гель для волос «AMERICAN CREW»</p>
 					<div class="price_buy">
 						3900 руб.
-						<a class="buy_btn" href="/">Купить</a>
+						<a class="btn" href="/">Купить</a>
 					</div>
 				</div>
 				<ul class="page_nav">
@@ -151,7 +154,7 @@
 		</div>
 	</div>
 	<footer class="main_footer">
-        <div class="container">
+		<div class="container">
 			<div class="footer_contacts">
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт_Петербург, Б. Конюшенная, д. 19/8<br>
@@ -168,7 +171,7 @@
 				<p>Разработано:</p>
 				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
 			</div>
-        </div>
-    </footer>
+		</div>
+	</footer>
 </body>
 </html>
